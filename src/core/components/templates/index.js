@@ -12,4 +12,14 @@ export default [
     component: Kit,
     name: 'Kit',
   },
+  {
+    url: '/boilerplate',
+    component: Home,
+    name: 'Home',
+  },
+  {
+    url: '/boilerplate/kit',
+    component: Kit,
+    name: 'Kit',
+  },
 ];

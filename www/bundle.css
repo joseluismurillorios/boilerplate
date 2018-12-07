@@ -4583,14 +4583,6 @@ div.scrollable {
     color: rgba(255, 255, 255, 0.2);
     color: var(--light-20);
     font-weight: 100; }
-.app__container {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-left: var(--s-bs);
-  padding-right: var(--s-bs); }
 .app__slider {
   position: relative; }
   .app__slider.touched {
@@ -4602,6 +4594,14 @@ div.scrollable {
     right: 0.75rem;
     bottom: var(--s-xs);
     right: var(--s-xs); }
+.app__container {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-left: var(--s-bs);
+  padding-right: var(--s-bs); }
 .app__background {
   width: 100%;
   height: 100%;
