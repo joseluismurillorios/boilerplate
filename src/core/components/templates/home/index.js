@@ -7,13 +7,9 @@ import Slider from '../../organisms/slider';
 import Container from '../../atoms/container';
 import Background from '../../atoms/background';
 
-import img1 from '../../../assets/images/carousel/carousel-1.jpg';
-import img2 from '../../../assets/images/carousel/carousel-2.jpg';
-import img3 from '../../../assets/images/carousel/carousel-3.jpg';
-
-// import img1 from '../../../assets/images/carousel-01.jpg';
-// import img2 from '../../../assets/images/carousel-02.jpg';
-// import img3 from '../../../assets/images/carousel-03.jpg';
+import img1 from '../../../assets/images/carousel/carousel-01.jpg';
+import img2 from '../../../assets/images/carousel/carousel-02.jpg';
+import img3 from '../../../assets/images/carousel/carousel-03.jpg';
 
 function log(txt) {
   console.log(txt);
@@ -30,12 +26,12 @@ class Home extends Component {
   }
 
   componentDidMount() {
-    this.container.addEventListener('resize', this.resize);
+    window.addEventListener('resize', this.resize);
     this.resize();
   }
 
   componentWillUnmount() {
-    this.container.removeEventListener('resize', this.resize);
+    window.removeEventListener('resize', this.resize);
   }
 
   resize() {
