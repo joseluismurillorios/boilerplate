@@ -4,3 +4,4 @@ views
 webpack.common.js
 webpack.dev.js
 webpack.prod.js
+package.json
