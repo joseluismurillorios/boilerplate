@@ -1,2 +1,6 @@
 node_modules
 src
+views
+webpack.common.js
+webpack.dev.js
+webpack.prod.js
