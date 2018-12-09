@@ -63,26 +63,26 @@
   font-family: 'Karla';
   font-style: normal;
   font-weight: 400;
-  src: url(/fonts/karla-regular.eot); /* IE9 Compat Modes */
+  src: url(/boilerplate/fonts/karla-regular.eot); /* IE9 Compat Modes */
   src: local('Karla'), local('Karla-Regular'),
-       url(/fonts/karla-regular.eot?#iefix) format('embedded-opentype'), 
-       url(/fonts/karla-regular.woff2) format('woff2'), 
-       url(/fonts/karla-regular.woff) format('woff'), 
-       url(/fonts/karla-regular.ttf) format('truetype'), 
-       url(/fonts/karla-regular.svg#Karla) format('svg'); /* Legacy iOS */
+       url(/boilerplate/fonts/karla-regular.eot?#iefix) format('embedded-opentype'), 
+       url(/boilerplate/fonts/karla-regular.woff2) format('woff2'), 
+       url(/boilerplate/fonts/karla-regular.woff) format('woff'), 
+       url(/boilerplate/fonts/karla-regular.ttf) format('truetype'), 
+       url(/boilerplate/fonts/karla-regular.svg#Karla) format('svg'); /* Legacy iOS */
 }
 /* karla-700 - latin */
 @font-face {
   font-family: 'Karla';
   font-style: normal;
   font-weight: 700;
-  src: url(/fonts/karla-700.eot); /* IE9 Compat Modes */
+  src: url(/boilerplate/fonts/karla-700.eot); /* IE9 Compat Modes */
   src: local('Karla Bold'), local('Karla-Bold'),
-       url(/fonts/karla-700.eot?#iefix) format('embedded-opentype'), 
-       url(/fonts/karla-700.woff2) format('woff2'), 
-       url(/fonts/karla-700.woff) format('woff'), 
-       url(/fonts/karla-700.ttf) format('truetype'), 
-       url(/fonts/karla-700.svg#Karla) format('svg'); /* Legacy iOS */
+       url(/boilerplate/fonts/karla-700.eot?#iefix) format('embedded-opentype'), 
+       url(/boilerplate/fonts/karla-700.woff2) format('woff2'), 
+       url(/boilerplate/fonts/karla-700.woff) format('woff'), 
+       url(/boilerplate/fonts/karla-700.ttf) format('truetype'), 
+       url(/boilerplate/fonts/karla-700.svg#Karla) format('svg'); /* Legacy iOS */
 }/*!
  * Font Awesome Free 5.5.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -4074,8 +4074,8 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Brands';
   font-style: normal;
   font-weight: normal;
-  src: url(/fonts/fa-brands-400.eot);
-  src: url(/fonts/fa-brands-400.eot?#iefix) format("embedded-opentype"), url(/fonts/fa-brands-400.woff2) format("woff2"), url(/fonts/fa-brands-400.woff) format("woff"), url(/fonts/fa-brands-400.ttf) format("truetype"), url(/fonts/fa-brands-400.svg#fontawesome) format("svg"); }
+  src: url(/boilerplate/fonts/fa-brands-400.eot);
+  src: url(/boilerplate/fonts/fa-brands-400.eot?#iefix) format("embedded-opentype"), url(/boilerplate/fonts/fa-brands-400.woff2) format("woff2"), url(/boilerplate/fonts/fa-brands-400.woff) format("woff"), url(/boilerplate/fonts/fa-brands-400.ttf) format("truetype"), url(/boilerplate/fonts/fa-brands-400.svg#fontawesome) format("svg"); }
 
 .fab {
   font-family: 'Font Awesome 5 Brands'; }
@@ -4583,6 +4583,25 @@ div.scrollable {
     color: rgba(255, 255, 255, 0.2);
     color: var(--light-20);
     font-weight: 100; }
+.app__slider {
+  position: relative; }
+  .app__slider.touched {
+    touch-action: none; }
+  .app__slider .app__radios {
+    position: absolute;
+    z-index: 1;
+    bottom: 0.75rem;
+    right: 0.75rem;
+    bottom: var(--s-xs);
+    right: var(--s-xs); }
+.app__container {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-left: var(--s-bs);
+  padding-right: var(--s-bs); }
 .app__background {
   width: 100%;
   height: 100%;
@@ -4611,25 +4630,17 @@ div.scrollable {
     -o-object-fit: cover;
        object-fit: cover;
     height: 100%; }
-.app__slider {
+.app__carousel {
   position: relative; }
-  .app__slider.touched {
+  .app__carousel.touched {
     touch-action: none; }
-  .app__slider .app__radios {
+  .app__carousel .app__radios {
     position: absolute;
     z-index: 1;
     bottom: 0.75rem;
     right: 0.75rem;
     bottom: var(--s-xs);
     right: var(--s-xs); }
-.app__container {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-left: var(--s-bs);
-  padding-right: var(--s-bs); }
 .preloader {
   position: fixed;
   width: 100%;
@@ -4700,28 +4711,6 @@ div.scrollable {
           animation: ball-scale-multiple 1s 0s linear infinite;
   background-color: rgba(225, 199, 155, 0.5);
   background-color: var(--primary-50); }
-.app__carousel {
-  position: relative; }
-  .app__carousel.touched {
-    touch-action: none; }
-  .app__carousel .app__radios {
-    position: absolute;
-    z-index: 1;
-    bottom: 0.75rem;
-    right: 0.75rem;
-    bottom: var(--s-xs);
-    right: var(--s-xs); }
-.app__social {
-  margin-top: 2rem;
-  margin-top: var(--s-bs); }
-  .app__social .app__brand {
-    margin: 0.5rem;
-    color: rgba(255, 255, 255, 0.5);
-    margin: var(--f-xs);
-    color: var(--light-50); }
-    .app__social .app__brand:hover {
-      color: white;
-      color: var(--light); }
 .app__corner {
   z-index: 9;
   position: fixed;
@@ -4808,6 +4797,17 @@ div.scrollable {
   @media (min-width: 768px) {
     .opened .app__corner::before {
       border-bottom-right-radius: 100%; } }
+.app__social {
+  margin-top: 2rem;
+  margin-top: var(--s-bs); }
+  .app__social .app__brand {
+    margin: 0.5rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin: var(--f-xs);
+    color: var(--light-50); }
+    .app__social .app__brand:hover {
+      color: white;
+      color: var(--light); }
 .app__navbar {
   position: absolute;
   z-index: 11; }
