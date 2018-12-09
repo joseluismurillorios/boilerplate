@@ -51,7 +51,7 @@ module.exports = {
         test: /\.(gif|svg|woff|woff2|ttf|eot)(\?.*$|$)/,
         loader: 'file-loader',
         options: {
-          publicPath: 'fonts',
+          publicPath: '/fonts',
           outputPath: 'fonts/',
           name: '[name].[ext]',
         },
@@ -61,7 +61,7 @@ module.exports = {
         test: /\.(png|jpg|jpeg)$/,
         loader: 'file-loader',
         options: {
-          publicPath: 'images',
+          publicPath: '/images',
           outputPath: 'images/',
           name: '[name].[ext]',
         },

@@ -1,37 +1,3 @@
-.app__radio {
-  display: inline-block;
-  cursor: pointer; }
-  .app__radio input {
-    display: none; }
-    .app__radio input:checked + .app__radio-label {
-      background: transparent;
-      transition: all 0.2s cubic-bezier(0.35, 0.9, 0.4, 0.9); }
-      .app__radio input:checked + .app__radio-label::after {
-        -webkit-transform: scale(1);
-                transform: scale(1);
-        transition: all 0.2s cubic-bezier(0.35, 0.9, 0.4, 0.9); }
-  .app__radio-label {
-    display: inline-block;
-    position: relative;
-    transition: all 0.2s cubic-bezier(0.35, 0.9, 0.4, 0.9);
-    margin: var(--s-xs);
-    width: var(--s-sm);
-    height: var(--s-sm);
-    border-radius: var(--s-sm);
-    background: var(--light-20); }
-    .app__radio-label::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      -webkit-transform: scale(0);
-              transform: scale(0);
-      transition: all 0.2s cubic-bezier(0.35, 0.9, 0.4, 0.9);
-      width: var(--s-sm);
-      height: var(--s-sm);
-      border-radius: var(--s-sm);
-      background: var(--darker);
-      border: 2px solid var(--primary); }
 .addhome {
   position: absolute;
   bottom: 1.5rem;
@@ -92,94 +58,31 @@
 @media screen and (orientation: landscape) {
   #addhome {
     display: none; } }
-.app__field {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  margin: 3rem 0;
-  margin: 3rem 0;
-  margin: var(--s-md) 0; }
-  .app__field .app__label {
-    font-size: .85rem;
-    margin-bottom: -8px;
-    font-size: 0.85rem;
-    color: #e1c79b;
-    font-size: var(--f-sm);
-    color: var(--primary); }
-.app__button {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background: transparent;
-  color: #e1c79b;
-  font-size: 1rem;
-  font-size: 0.85rem;
-  border-radius: 2rem;
-  border: 1px solid rgba(225, 199, 155, 0.15);
-  margin-bottom: 0.75rem 0;
-  padding: 0.75rem 2rem;
-  color: var(--primary);
-  font-size: var(--f-bs);
-  font-size: var(--f-sm);
-  border-radius: var(--s-bs);
-  border: 1px solid var(--primary-15);
-  margin-bottom: var(--s-xs) 0;
-  padding: var(--s-xs) var(--s-bs);
-  text-transform: uppercase;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  transition: all .15s ease-in-out; }
-  .app__button:focus {
-    border: 1px solid rgba(225, 199, 155, 0.5);
-    border: 1px solid var(--primary-50); }
-  .app__button:active, .app__button:visited {
-    border: 1px solid #e1c79b;
-    background: #212121;
-    border: 1px solid var(--primary);
-    background: var(--dark); }
-  .app__button::-webkit-input-placeholder {
-    color: rgba(255, 255, 255, 0.2);
-    color: var(--light-20);
-    font-weight: 100; }
-  .app__button:-ms-input-placeholder {
-    color: rgba(255, 255, 255, 0.2);
-    color: var(--light-20);
-    font-weight: 100; }
-  .app__button::-ms-input-placeholder {
-    color: rgba(255, 255, 255, 0.2);
-    color: var(--light-20);
-    font-weight: 100; }
-  .app__button::placeholder {
-    color: rgba(255, 255, 255, 0.2);
-    color: var(--light-20);
-    font-weight: 100; }
 /* karla-regular - latin */
 @font-face {
   font-family: 'Karla';
   font-style: normal;
   font-weight: 400;
-  src: url(fonts/karla-regular.eot); /* IE9 Compat Modes */
+  src: url(/fonts/karla-regular.eot); /* IE9 Compat Modes */
   src: local('Karla'), local('Karla-Regular'),
-       url(fonts/karla-regular.eot?#iefix) format('embedded-opentype'), 
-       url(fonts/karla-regular.woff2) format('woff2'), 
-       url(fonts/karla-regular.woff) format('woff'), 
-       url(fonts/karla-regular.ttf) format('truetype'), 
-       url(fonts/karla-regular.svg#Karla) format('svg'); /* Legacy iOS */
+       url(/fonts/karla-regular.eot?#iefix) format('embedded-opentype'), 
+       url(/fonts/karla-regular.woff2) format('woff2'), 
+       url(/fonts/karla-regular.woff) format('woff'), 
+       url(/fonts/karla-regular.ttf) format('truetype'), 
+       url(/fonts/karla-regular.svg#Karla) format('svg'); /* Legacy iOS */
 }
 /* karla-700 - latin */
 @font-face {
   font-family: 'Karla';
   font-style: normal;
   font-weight: 700;
-  src: url(fonts/karla-700.eot); /* IE9 Compat Modes */
+  src: url(/fonts/karla-700.eot); /* IE9 Compat Modes */
   src: local('Karla Bold'), local('Karla-Bold'),
-       url(fonts/karla-700.eot?#iefix) format('embedded-opentype'), 
-       url(fonts/karla-700.woff2) format('woff2'), 
-       url(fonts/karla-700.woff) format('woff'), 
-       url(fonts/karla-700.ttf) format('truetype'), 
-       url(fonts/karla-700.svg#Karla) format('svg'); /* Legacy iOS */
+       url(/fonts/karla-700.eot?#iefix) format('embedded-opentype'), 
+       url(/fonts/karla-700.woff2) format('woff2'), 
+       url(/fonts/karla-700.woff) format('woff'), 
+       url(/fonts/karla-700.ttf) format('truetype'), 
+       url(/fonts/karla-700.svg#Karla) format('svg'); /* Legacy iOS */
 }/*!
  * Font Awesome Free 5.5.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -4171,8 +4074,8 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Brands';
   font-style: normal;
   font-weight: normal;
-  src: url(fonts/fa-brands-400.eot);
-  src: url(fonts/fa-brands-400.eot?#iefix) format("embedded-opentype"), url(fonts/fa-brands-400.woff2) format("woff2"), url(fonts/fa-brands-400.woff) format("woff"), url(fonts/fa-brands-400.ttf) format("truetype"), url(fonts/fa-brands-400.svg#fontawesome) format("svg"); }
+  src: url(/fonts/fa-brands-400.eot);
+  src: url(/fonts/fa-brands-400.eot?#iefix) format("embedded-opentype"), url(/fonts/fa-brands-400.woff2) format("woff2"), url(/fonts/fa-brands-400.woff) format("woff"), url(/fonts/fa-brands-400.ttf) format("truetype"), url(/fonts/fa-brands-400.svg#fontawesome) format("svg"); }
 
 .fab {
   font-family: 'Font Awesome 5 Brands'; }
@@ -4547,6 +4450,103 @@ div.scrollable {
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   overflow-x: hidden; }
+.app__field {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin: 3rem 0;
+  margin: 3rem 0;
+  margin: var(--s-md) 0; }
+  .app__field .app__label {
+    font-size: .85rem;
+    margin-bottom: -8px;
+    font-size: 0.85rem;
+    color: #e1c79b;
+    font-size: var(--f-sm);
+    color: var(--primary); }
+.app__button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: transparent;
+  color: #e1c79b;
+  font-size: 1rem;
+  font-size: 0.85rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(225, 199, 155, 0.15);
+  margin-bottom: 0.75rem 0;
+  padding: 0.75rem 2rem;
+  color: var(--primary);
+  font-size: var(--f-bs);
+  font-size: var(--f-sm);
+  border-radius: var(--s-bs);
+  border: 1px solid var(--primary-15);
+  margin-bottom: var(--s-xs) 0;
+  padding: var(--s-xs) var(--s-bs);
+  text-transform: uppercase;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  transition: all .15s ease-in-out; }
+  .app__button:focus {
+    border: 1px solid rgba(225, 199, 155, 0.5);
+    border: 1px solid var(--primary-50); }
+  .app__button:active, .app__button:visited {
+    border: 1px solid #e1c79b;
+    background: #212121;
+    border: 1px solid var(--primary);
+    background: var(--dark); }
+  .app__button::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.2);
+    color: var(--light-20);
+    font-weight: 100; }
+  .app__button:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.2);
+    color: var(--light-20);
+    font-weight: 100; }
+  .app__button::-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.2);
+    color: var(--light-20);
+    font-weight: 100; }
+  .app__button::placeholder {
+    color: rgba(255, 255, 255, 0.2);
+    color: var(--light-20);
+    font-weight: 100; }
+.app__radio {
+  display: inline-block;
+  cursor: pointer; }
+  .app__radio input {
+    display: none; }
+    .app__radio input:checked + .app__radio-label {
+      background: transparent;
+      transition: all 0.2s cubic-bezier(0.35, 0.9, 0.4, 0.9); }
+      .app__radio input:checked + .app__radio-label::after {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        transition: all 0.2s cubic-bezier(0.35, 0.9, 0.4, 0.9); }
+  .app__radio-label {
+    display: inline-block;
+    position: relative;
+    transition: all 0.2s cubic-bezier(0.35, 0.9, 0.4, 0.9);
+    margin: var(--s-xs);
+    width: var(--s-sm);
+    height: var(--s-sm);
+    border-radius: var(--s-sm);
+    background: var(--light-20); }
+    .app__radio-label::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      transition: all 0.2s cubic-bezier(0.35, 0.9, 0.4, 0.9);
+      width: var(--s-sm);
+      height: var(--s-sm);
+      border-radius: var(--s-sm);
+      background: var(--darker);
+      border: 2px solid var(--primary); }
 .app__input {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -4583,14 +4583,6 @@ div.scrollable {
     color: rgba(255, 255, 255, 0.2);
     color: var(--light-20);
     font-weight: 100; }
-.app__container {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-left: var(--s-bs);
-  padding-right: var(--s-bs); }
 .app__slider {
   position: relative; }
   .app__slider.touched {
@@ -4602,6 +4594,14 @@ div.scrollable {
     right: 0.75rem;
     bottom: var(--s-xs);
     right: var(--s-xs); }
+.app__container {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-left: var(--s-bs);
+  padding-right: var(--s-bs); }
 .app__background {
   width: 100%;
   height: 100%;
@@ -4630,17 +4630,6 @@ div.scrollable {
     -o-object-fit: cover;
        object-fit: cover;
     height: 100%; }
-.app__carousel {
-  position: relative; }
-  .app__carousel.touched {
-    touch-action: none; }
-  .app__carousel .app__radios {
-    position: absolute;
-    z-index: 1;
-    bottom: 0.75rem;
-    right: 0.75rem;
-    bottom: var(--s-xs);
-    right: var(--s-xs); }
 .preloader {
   position: fixed;
   width: 100%;
@@ -4711,6 +4700,17 @@ div.scrollable {
           animation: ball-scale-multiple 1s 0s linear infinite;
   background-color: rgba(225, 199, 155, 0.5);
   background-color: var(--primary-50); }
+.app__carousel {
+  position: relative; }
+  .app__carousel.touched {
+    touch-action: none; }
+  .app__carousel .app__radios {
+    position: absolute;
+    z-index: 1;
+    bottom: 0.75rem;
+    right: 0.75rem;
+    bottom: var(--s-xs);
+    right: var(--s-xs); }
 .app__corner {
   z-index: 9;
   position: fixed;

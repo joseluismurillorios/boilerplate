@@ -65,7 +65,6 @@ class Kit extends Component {
           <Field id="Password" text="Password" placeholder="type your password" onKeyDown={() => {}} type="password" />
           <Button onClick={() => {}}>Log in</Button>
           <Button onClick={() => {}}><span>Register</span></Button>
-          <Link to="/">Home</Link>
         </Container>
       </Scrollable>
     );
