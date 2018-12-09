@@ -4625,8 +4625,7 @@ div.scrollable {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(27, 27, 27, 0.5);
-    background-image: linear-gradient(-180deg, rgba(26, 26, 26, 0) 21%, #1A1A1A 89%); }
+    background-image: linear-gradient(-180deg, rgba(26, 26, 26, 0) 22%, #1A1A1A 92%); }
   .app__background img {
     -o-object-fit: cover;
        object-fit: cover;
@@ -4830,4 +4829,4 @@ div.scrollable {
         color: #e1c79b;
         color: var(--primary); }
 
-/*# sourceMappingURL=bundle.css.map*/
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJidW5kbGUuY3NzIiwic291cmNlUm9vdCI6IiJ9*/
